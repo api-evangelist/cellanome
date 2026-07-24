@@ -1,8 +1,25 @@
 aid: cellanome
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cellanome.png
 name: Cellanome
-description: Cellanome is a company surfaced as a portfolio company of 8vc, dcvc, general-catalyst, sv-angel,
-  wing-venture-capital and added to the API Evangelist network as a stub for enrichment. This profile
-  is a lead awaiting the enrichment pipeline.
+description: Cellanome is a life-sciences technology company building multimodal single-cell analysis
+  instrumentation. Its R3200 Platform combines live-cell imaging with single-cell transcriptomics using
+  proprietary CellCage technology to isolate, observe, and perturb individual cells and track their
+  dynamics over time, with applications across neurobiology, immunology, cancer research, aging, and
+  CRISPR screening. Cellanome is venture-backed (8vc, DCVC, General Catalyst, SV Angel, Wing Venture
+  Capital) and surfaced in the API Evangelist network as a portfolio lead. As of this enrichment pass
+  the company publishes a marketing and scientific-resources website but no public developer, API, or
+  SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/cellanome/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Life Sciences
+- Biotechnology
+- Single Cell Analysis
+- Genomics
+- Laboratory Instruments
+- Scientific Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cellanome-domain-security.yml
 - type: Website
   url: https://cellanome.com
+- type: Support
+  url: https://cellanome.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
